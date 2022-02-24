@@ -23,6 +23,7 @@ export class MoviesController {
 
   @Get('/:id')
   getOne(@Param('id') movieID: number): Movie {
+    console.log(movieID);
     return this.moviesService.getOne(movieID);
   }
 
